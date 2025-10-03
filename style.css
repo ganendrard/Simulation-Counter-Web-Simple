@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Inter", sans-serif; /* clean modern font */
+	transition: background 0.8s ease, color 0.8s ease;
+}
+
+/* Container */
+.counter-container {
+	text-align: center;
+	/* fade effect */
+	opacity: 1;
+	transition: opacity 0.8s ease;
+}
+
+.fade-out {
+	opacity: 0;
+}
+
+/* Count */
+h1#count {
+	font-size: 6rem;
+	margin-bottom: 30px;
+	transition: color 0.8s ease;
+	font-weight: 700; /* bold, modern look */
+	letter-spacing: -2px; /* rapetin biar lebih stylish */
+}
+
+/* Buttons */
+button {
+	margin: 0 10px;
+	padding: 12px 30px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-family: "Inter", sans-serif;
+}
+
+#increase {
+	background: #4ade80; /* soft green */
+	color: #ffffff;
+}
+#increase:hover {
+	background: #22c55e; /* darker green on hover */
+	box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+	transform: translateY(-2px);
+}
+
+#decrease {
+	background: #f87171; /* soft red */
+	color: #ffffff;
+}
+#decrease:hover {
+	background: #ef4444; /* darker red on hover */
+	box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+	transform: translateY(-2px);
+}
+
+#reset {
+	background: #60a5fa; /* soft blue */
+	color: #ffffff;
+}
+#reset:hover {
+	background: #3b82f6; /* darker blue on hover */
+	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+	transform: translateY(-2px);
+}
+
+/* Light Mode */
+body.light {
+	background: linear-gradient(135deg, #fdfbfb, #ebedee);
+	color: #222;
+}
+
+/* Dark Mode */
+body.dark {
+	background: linear-gradient(135deg, #1e1e2f, #27293d);
+	color: #e0e0e0;
+}
